@@ -28,7 +28,7 @@ public class LoginPage extends TestBase{
 	     
 	     WebElement welcometxt = finder.byText("Welcome to Beneficiary Registration");
 	     welcometxt.isDisplayed();
-	     Assert.assertEquals("", "");
+	     
 	}
 	
 

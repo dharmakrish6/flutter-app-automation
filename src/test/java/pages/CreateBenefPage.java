@@ -37,10 +37,6 @@ public class CreateBenefPage extends TestBase{
 	     WebElement welcometxt = finder.bySemanticsLabel("btnSubmit");
 	     welcometxt.click();
 	     
-	     WebElement alert = finder.bySemanticsLabel("btnSubmit");
-	     welcometxt.click();
-	     
-	     Assert.assertEquals("", "");
 	}
 	
 
