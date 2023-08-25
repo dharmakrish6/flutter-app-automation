@@ -18,25 +18,30 @@ public class CreateBenefPage extends TestBase{
 
 	public void createbenficiary() {
 		FlutterFinder finder = new FlutterFinder(driver);
-	     WebElement username = finder.bySemanticsLabel("name");
-	     username.sendKeys("Dharmalingam K");
+	     WebElement name = finder.bySemanticsLabel("name");
+	     name.sendKeys("Dharmalingam K");
 	     
-	     WebElement password = finder.bySemanticsLabel("Idtype");
-	     password.sendKeys("Aadhar");
+	     WebElement idType = finder.bySemanticsLabel("Idtype");
+	     idType.sendKeys("Aadhar");
 	     
-	     WebElement btnLogin = finder.bySemanticsLabel("IdNumber");
-	     btnLogin.sendKeys("123409874321");
+	     WebElement idNumber = finder.bySemanticsLabel("IdNumber");
+	     idNumber.sendKeys("123409874321");
 	     
 	     WebElement age = finder.bySemanticsLabel("age");
-	     btnLogin.sendKeys("32");
+	     
+	     age.sendKeys("32");
+	     
 	     WebElement gender = finder.bySemanticsLabel("gender");
-	     btnLogin.sendKeys("Male");
+	     gender.sendKeys("Male");
+	     
 	     WebElement mobile = finder.bySemanticsLabel("mobile");
-	     btnLogin.sendKeys("9742379422");
+	     mobile.sendKeys("9742379422");
 	     
-	     WebElement welcometxt = finder.bySemanticsLabel("btnSubmit");
-	     welcometxt.click();
+	     WebElement submitbtn = finder.bySemanticsLabel("btnSubmit");
+	     submitbtn.click();
 	     
+	     WebElement alertSuccess=finder.bySemanticsLabel("Success");
+	     alertSuccess.click();
 	}
 	
 

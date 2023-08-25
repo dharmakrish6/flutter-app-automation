@@ -27,7 +27,8 @@ public class LoginPage extends TestBase{
 	     btnLogin.click();
 	     
 	     WebElement welcometxt = finder.byText("Welcome to Beneficiary Registration");
-	     welcometxt.isDisplayed();
+	     String strwelcome=welcometxt.getText().toString();
+	     System.out.println(strwelcome);
 	     
 	}
 	
